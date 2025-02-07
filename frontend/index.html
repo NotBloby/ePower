@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ePower</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="app-container">
+            <aside class="sidebar">
+                <div class="logo">
+                    <img src="/api/placeholder/50/50" alt="PowerbankMonitor Logo">
+                    <h2>ePower</h2>
+                </div>
+                <nav>
+                    <ul class="nav-menu">
+                        <li class="nav-item"><a href="#" class="active"><i class="fas fa-battery-full"></i>Dashboard</a></li>
+                        <li class="nav-item"><a href="#"><i class="fas fa-chart-line"></i>Analytics</a></li>
+                        <li class="nav-item"><a href="#"><i class="fas fa-cog"></i>Settings</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            <main class="main-content">
+                <section>
+                    <div class="device-grid" id="device-container"></div>
+                </section>
+                <section class="stats-panel">
+                    <h3>Device Statistics</h3>
+                    <div class="stats-card">
+                        <i class="fas fa-chart-pie"></i>
+                        <div>
+                            <h4>Total Connected Devices</h4>
+                            <p id="total-devices">0</p>
+                        </div>
+                    </div>
+                    <div class="stats-card">
+                        <i class="fas fa-bolt"></i>
+                        <div>
+                            <h4>Average Battery Level</h4>
+                            <p id="avg-battery">0%</p>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
