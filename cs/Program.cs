@@ -10,7 +10,7 @@ using System.Diagnostics;
 using System.IO;
 using WebSocketSharp.Server;
 
-namespace MonitorW
+namespace ePower
 {
     public class Powerbank
     {
