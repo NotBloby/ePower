@@ -18,35 +18,31 @@
 ## Struktura projektu
 ```
 ePower/
-│── backend/              # Backendová část v C#
-│   ├── PowerbankMonitor.sln   # Projektové řešení pro Visual Studio
+│── backend/
+│   ├── ePower.sln
 │   ├── src/
-│   │   ├── Program.cs    # Hlavní soubor aplikace
-│   │   ├── UsbDetector.cs  # Detekce připojené powerbanky
-│   │   ├── BatteryStatus.cs  # Získání informací o stavu baterie
-│   │   ├── Server.cs  # API server pro komunikaci s frontendem
+│   │   ├── Program.cs
+│   │   ├── USB.cs
+│   │   ├── Battery.cs
+│   │   ├── Server.cs
 │
-│── frontend/             # Frontendová část (HTML, CSS, JS)
-│   ├── index.html        # Hlavní stránka aplikace
-│   ├── styles.css        # CSS pro vzhled aplikace
-│   ├── script.js         # JavaScript pro zpracování dat
+│── frontend/    
+│   ├── index.html
+│   ├── styles.css
+│   ├── script.js
 │
-│── python/               # Python pro analýzu dat (volitelné)
-│   ├── analyze.py        # Skript pro pokročilé zpracování dat
-│   ├── requirements.txt  # Seznam potřebných knihoven
+│── python/
+│   ├── analyze.py
+│   ├── requirements.txt
 │
-│── docs/                 # Dokumentace k projektu
-│   ├── README.md         # Popis projektu
-│   ├── API_Documentation.md  # Popis API
+│── tests/
+│   ├── test_backend.py
+│   ├── test_frontend.js 
 │
-│── tests/                # Testovací soubory
-│   ├── test_backend.py   # Testy pro backend
-│   ├── test_frontend.js  # Testy pro frontend
-│
-│── config.json           # Konfigurační soubor pro aplikaci
-│── .gitignore            # Ignorované soubory pro Git
-│── LICENSE               # Licence projektu
-│── README.md             # Hlavní popis projektu
+│── config.json
+│── .gitignore
+│── LICENSE
+│── README.md
 ```
 
 ## Instalace a spuštění
@@ -59,7 +55,7 @@ ePower/
 ### Instalace
 1. Naklonujte repozitář:
    ```sh
-   git clone https://github.com/tvuj-username/ePower.git
+   git clone https://github.com/NotBloby/ePower.git
    cd ePower
    ```
 
